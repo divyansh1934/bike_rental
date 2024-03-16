@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: BikeSharePrediction
+Version: 0.0.1
+Author: divyansh
+Author-email: divyanshbisht989@gmail.com
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy

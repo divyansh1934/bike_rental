@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+BikeSharePrediction.egg-info/PKG-INFO
+BikeSharePrediction.egg-info/SOURCES.txt
+BikeSharePrediction.egg-info/dependency_links.txt
+BikeSharePrediction.egg-info/requires.txt
+BikeSharePrediction.egg-info/top_level.txt

@@ -8,8 +8,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
-from src.exception import CustomException
-from src.logger import logging
+from src.BikeSharePrediction.exception import CustomException
+from src.BikeSharePrediction.logger import logging
 import os
 from src.utils import save_object
 

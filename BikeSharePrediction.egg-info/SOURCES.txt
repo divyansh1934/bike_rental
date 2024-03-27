@@ -1,4 +1,6 @@
 LICENSE
+pyproject.toml
+setup.cfg
 setup.py
 BikeSharePrediction.egg-info/PKG-INFO
 BikeSharePrediction.egg-info/SOURCES.txt

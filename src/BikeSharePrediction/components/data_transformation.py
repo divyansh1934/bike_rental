@@ -8,10 +8,10 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
-from src.BikeSharePrediction.exception import CustomException
+from src.BikeSharePrediction.exception import customException
 from src.BikeSharePrediction.logger import logging
 import os
-from src.utils import save_object
+from src.BikeSharePrediction.utils.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
@@ -64,7 +64,7 @@ class DataTransformation:
 
         except Exception as e:
             logging.info("Error in Data Transformation")
-            raise CustomException(e,sys)
+            raise customException(e,sys)
         
     def initaite_data_transformation(self,train_path,test_path):
         try:
@@ -116,4 +116,4 @@ class DataTransformation:
         except Exception as e:
             logging.info("Exception occured in the initiate_datatransformation")
 
-            raise CustomException(e,sys)
+            raise customException(e,sys)

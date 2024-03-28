@@ -1,7 +1,7 @@
 import os
 import sys
 from src.BikeSharePrediction.logger import logging
-from src.BikeSharePrediction.exception import CustomException
+from src.BikeSharePrediction.exception import customException
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -49,6 +49,6 @@ class DataIngestion:
 
         except Exception as e:
             logging.info('Exception occured at Data Ingestion Stage')
-            raise CustomException(e,sys)
+            raise customException(e,sys)
 
     

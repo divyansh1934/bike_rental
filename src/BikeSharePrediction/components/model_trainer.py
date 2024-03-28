@@ -6,11 +6,11 @@ from sklearn.linear_model import LinearRegression, Ridge,Lasso,ElasticNet
 import xgboost as xgb
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.tree import DecisionTreeRegressor
-from src.BikeSharePrediction.exception import CustomException
+from src.BikeSharePrediction.exception import customException
 from src.BikeSharePrediction.logger import logging
 
-from src.BikeSharePrediction.utils import save_object
-from src.BikeSharePrediction.utils import evaluate_model
+from src.BikeSharePrediction.utils.utils import save_object
+from src.BikeSharePrediction.utils.utils import evaluate_model
 
 from dataclasses import dataclass
 import sys
@@ -99,4 +99,4 @@ class ModelTrainer:
 
         except Exception as e:
             logging.info('Exception occurred at Model Training')
-            raise CustomException(e, sys)
+            raise customException(e, sys)
